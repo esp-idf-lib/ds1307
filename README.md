@@ -1,5 +1,9 @@
 # esp-idf-lib/ds1307
 
+[![Build examples](https://github.com/esp-idf-lib/ds1307/actions/workflows//build.yml/badge.svg)](https://github.com/esp-idf-lib/ds1307/actions/workflows//build.yml)
+[![Build docs](https://github.com/esp-idf-lib/ds1307/actions/workflows//build-docs.yml/badge.svg)](https://github.com/esp-idf-lib/ds1307/actions/workflows//build-docs.yml)
+[![Validation](https://github.com/esp-idf-lib/ds1307/actions/workflows//validate-component.yml/badge.svg)](https://github.com/esp-idf-lib/ds1307/actions/workflows//validate-component.yml)
+
 Driver for DS1307 RTC module.
 
 * [Documentation](https://esp-idf-lib.github.io/ds1307/)
@@ -11,7 +15,7 @@ Driver for DS1307 RTC module.
 ## Installation
 
 ```sh
-idf.py add-dependency esp-idf-lib/ds1307^1.0.1
+idf.py add-dependency esp-idf-lib/ds1307
 ```
 
 ## Support
