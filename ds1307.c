@@ -163,7 +163,8 @@ esp_err_t ds1307_set_time(i2c_dev_t *dev, const struct tm *time)
 {
     CHECK_ARG(dev && time);
 
-    uint8_t buf[7] = {
+    uint8_t buf[7] =
+    {
         dec2bcd(time->tm_sec),
         dec2bcd(time->tm_min),
         dec2bcd(time->tm_hour),

@@ -12,7 +12,8 @@ void ds1307_test(void *pvParameters)
     ESP_ERROR_CHECK(ds1307_init_desc(&dev, 0, CONFIG_EXAMPLE_I2C_MASTER_SDA, CONFIG_EXAMPLE_I2C_MASTER_SCL));
 
     // setup datetime: 2018-04-11 00:52:10
-    struct tm time = {
+    struct tm time =
+    {
         .tm_year = 118, //since 1900 (2018 - 1900)
         .tm_mon  = 3,  // 0-based
         .tm_mday = 11,
@@ -27,7 +28,7 @@ void ds1307_test(void *pvParameters)
         ds1307_get_time(&dev, &time);
 
         printf("%04d-%02d-%02d %02d:%02d:%02d\n", time.tm_year + 1900 /*Add 1900 for better readability*/, time.tm_mon + 1,
-            time.tm_mday, time.tm_hour, time.tm_min, time.tm_sec);
+               time.tm_mday, time.tm_hour, time.tm_min, time.tm_sec);
 
         vTaskDelay(pdMS_TO_TICKS(500));
     }
