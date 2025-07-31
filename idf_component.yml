@@ -1,5 +1,5 @@
 ---
-version: 1.0.7
+version: 1.0.8
 description: Driver for DS1307 RTC module
 license: BSD-3
 targets:
