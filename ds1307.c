@@ -40,7 +40,7 @@
 #include <esp_idf_lib_helpers.h>
 #include "ds1307.h"
 
-#define I2C_FREQ_HZ 400000
+#define I2C_FREQ_HZ 100000
 
 #define RAM_SIZE 56
 
